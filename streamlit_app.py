@@ -20,7 +20,7 @@ st.markdown("""
         padding-top: 2.5rem !important;
         font-size:  1.5rem;
         font-weight: 500;
-        color: #FFFFFF;
+        color: #000000;
         line-height: 1.2; /* Asegura que el emoji y el texto tengan espacio vertical */
         margin: 0; 
         padding-top: 5px; /* Ajuste fino hacia abajo si queda muy pegado al borde */
