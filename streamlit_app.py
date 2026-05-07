@@ -97,8 +97,8 @@ def vista_datos():
                 st.markdown("<h3 style='text-align: center; color: black;'>Datos Usuario: </h3>", unsafe_allow_html=True)
                 st.write("Nombre: ")
                 st.write("Apellidos: ")
-                st.write("Direccion: ")
-                st.write("Poblacion: ")
+                st.write("Dirección: ")
+                st.write("Población: ")
             with col_mapa:
                 st.markdown("<h3 style='text-align: center; color: black;'>Mapa</h3>", unsafe_allow_html=True)
                 # Mapa de ejemplo
