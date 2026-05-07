@@ -90,22 +90,24 @@ st.markdown("""
 ## --- FUNCIONES DE CADA SECCION ---
 
 def vista_datos():
-    st.subheader(f"Informacion de {username}",text_alignment="center")
-
-def vista_mapa():
-        
-        with st.container(key="auto"):
-            col_buscador, col_mapa = st.columns(2,border=True)
+    with st.container(key="auto"):
+            col_datos, col_mapa = st.columns(2,border=True)
             
-            with col_buscador:
-                st.markdown("<h3 style='text-align: center; color: black;'>Buscador de usuarios</h3>", unsafe_allow_html=True)
-                st.selectbox("Select", ["Usuario 1", "Usuario 2"], label_visibility="collapsed", index=None, placeholder="Seleccione un usuario")
-            
+            with col_datos:
+                st.markdown("<h3 style='text-align: center; color: black;'>Datos Usuario: </h3>", unsafe_allow_html=True)
+                st.write("Nombre: ")
+                st.write("Apellidos: ")
+                st.write("Direccion: ")
+                st.write("Poblacion: ")
             with col_mapa:
                 st.markdown("<h3 style='text-align: center; color: black;'>Mapa</h3>", unsafe_allow_html=True)
                 # Mapa de ejemplo
                 st.image("https://previews.123rf.com/images/meteoropata/meteoropata1702/meteoropata170200660/72499643-valladolid-map-spain-province-vector-map-high-detailed-vector-map-of-spain-with-separated-regions.jpg", 
                         width="content") 
+
+def vista_mapa():
+        st.subheader("Mapa con posible iframe")
+        
 
 def vista_actividad():
     st.subheader("Registro de Actividades", text_alignment="center")
